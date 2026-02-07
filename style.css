@@ -1,0 +1,289 @@
+*,
+*::before,
+*::after {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+  font-family: "Manrope", sans-serif;
+  font-optical-sizing: auto;
+  font-weight: 400;
+  font-style: normal;
+  outline: auto;
+}
+body {
+  min-width: 100%;
+  min-height: 100dvh;
+  display: grid;
+  grid-template-columns: 200px 1fr;
+}
+
+.nav-bar {
+  /* height: 100vh; */
+  padding: 20px;
+  display: grid;
+  grid-template-rows: auto 1fr auto auto;
+  gap: 10px;
+}
+.logo {
+  padding: 20px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  gap: 8px;
+}
+.icon {
+  height: 24px;
+  width: 24px;
+  background-repeat: no-repeat;
+  background-position: center;
+  background-size: contain;
+}
+.logo .icon--set {
+  background-image: url(assets/Iconly/side_bar/set_icon.svg);
+}
+.nav-links {
+  padding: 0 20px;
+  display: flex;
+  flex-direction: column;
+  align-items: flex-start;
+  justify-content: center;
+  gap: 30px;
+  list-style-type: none;
+}
+.icon--overview {
+  background-image: url(assets/Iconly/side_bar/Overview.svg);
+}
+.icon--course {
+  background-image: url(assets/Iconly/side_bar/Course.svg);
+}
+.icon--resources {
+  background-image: url(assets/Iconly/side_bar/Resources.svg);
+}
+.icon--message {
+  background-image: url(assets/Iconly/side_bar/Message.svg);
+}
+.icon--setting {
+  background-image: url(assets/Iconly/side_bar/Setting.svg);
+}
+.nav-links li {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  gap: 8px;
+}
+.sidebar-image {
+  height: 190px;
+  width: 100%;
+  background-image: url(assets/sidebar_image.png);
+  background-repeat: no-repeat;
+  background-position: center;
+  background-size: contain;
+}
+.upgrade-plan {
+  margin-top: 40px;
+  border-radius: 4px;
+  background-color: aliceblue;
+  padding: 10px;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  gap: 10px;
+}
+.upgrade-plan > p {
+  width: 100%;
+  text-align: center;
+}
+.upgrade-plan-bottom {
+  width: 100%;
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+}
+.icon--upgrade-plan {
+  border-radius: 4px;
+  border: 1px solid blue;
+  background-image: url(assets/Iconly/side_bar/Upgrade_your_plan.svg);
+}
+
+.dashboard {
+  display: grid;
+  grid-template-columns: 6fr 4fr;
+}
+.dashboard-main {
+  padding: 20px;
+  outline: 1px solid red;
+  display: grid;
+  grid-template-rows: auto auto 1fr;
+}
+.main-header {
+  display: flex;
+  flex-direction: column;
+}
+.main-header p {
+  margin: 10px 0;
+}
+.main-header .header-div {
+  display: flex;
+  justify-content: space-between;
+  gap: 10px;
+}
+.header-div header {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  gap: 10px;
+}
+.header-div .search-bar {
+  width: 100px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  gap: 5px;
+  position: relative;
+}
+.search-bar .icon--search {
+  background-image: url(assets/Iconly/My_Course/search.svg);
+}
+.search-bar .search-input {
+  width: 100%;
+}
+.search-input:focus {
+  outline: none;
+}
+.search-input:focus::placeholder {
+  color: transparent;
+}
+.courses {
+  margin-top: 20px;
+  padding: 20px;
+  display: grid;
+  grid-template-columns: repeat(2, 1fr);
+  justify-items: center;
+  align-items: center;
+  gap: 20px;
+}
+.box {
+  width: 300px;
+  height: 150px;
+}
+.planning {
+  height: auto;
+  margin-top: 10px;
+}
+.planning-header {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+}
+.planning-heading {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  gap: 10px;
+}
+.date {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  gap: 10px;
+}
+.icon--calender {
+  background-image: url(assets/Iconly/My_Course/calendar.svg);
+}
+.planning-grid {
+  padding: 10px;
+  display: grid;
+  grid-template-columns: repeat(2, 1fr);
+  justify-items: center;
+  align-items: center;
+  gap: 10px;
+}
+.plan {
+  width: 300px;
+  height: 80px;
+}
+
+.dashboard-aside {
+  padding: 20px;
+  display: grid;
+  grid-template-rows: auto 0.6fr 0.4fr;
+  gap: 10px;
+}
+.aside-header {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+}
+.icon--bell {
+  background-image: url(assets/Iconly/Statistics/notification_bell.svg);
+}
+.profile {
+  padding: 10px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  gap: 10px;
+}
+.profile-pic {
+  height: 30px;
+  width: 30px;
+}
+.name-and-plan {
+  display: flex;
+  flex-direction: column;
+  align-items: flex-start;
+  justify-content: center;
+  gap: 5px;
+}
+.icon--down {
+  height: 15px;
+  width: 15px;
+  background-image: url(assets/Iconly/Statistics/down.svg);
+}
+.stats {
+  display: flex;
+  flex-direction: column;
+}
+.stats-grid {
+  padding: 20px;
+  display: grid;
+  grid-template-columns: repeat(2, 1fr);
+  justify-items: center;
+  align-items: center;
+  gap: 20px;
+}
+.card {
+  width: 180px;
+  height: 180px;
+}
+.activity {
+  padding: 10px;
+  display: flex;
+  flex-direction: column;
+  gap: 20px;
+}
+.activity-header {
+  display: flex;
+  justify-content: space-between;
+}
+.type {
+  display: flex;
+  gap: 5px;
+}
+.week {
+  display: flex;
+  align-items: flex-end;
+  justify-content: space-evenly;
+}
+.week > div {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+}
+.length {
+  width: 30px;
+  height: 250px;
+  background-color: coral;
+}
